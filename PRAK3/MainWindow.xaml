@@ -1,0 +1,24 @@
+﻿<Window x:Class="PRAK3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRAK3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button x:Name="Page1" Grid.Row="0" Click="Page1_Click" Width="30">1</Button>
+            <Button x:Name="Page2" Grid.Row="0" Click="Page2_Click" Width="30">2</Button>
+            <Button x:Name="Page3" Grid.Row="0" Click="Page3_Click" Width="30">3</Button>
+            <Button x:Name="Page4" Grid.Row="0" Click="Page4_Click" Width="30">4</Button>
+            <Button x:Name="Page5" Grid.Row="0" Click="Page5_Click" Width="30">5</Button>
+        </StackPanel>
+        <Frame x:Name="MyFrame" Grid.Row="1"></Frame>
+    </Grid>
+</Window>
